@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login - Voting App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2><b>VOTERS' SERVICE PORTAL</b></h2>
+    <input type="text" id="username" placeholder="Your name" />
+    <button class="clickme" onclick="login()">Login</button>
+    <img
+      src="https://capeunion.org/sites/default/files/styles/panopoly_image_original/public/page/featured/vote.jpg?itok=ytmdcb_k&c=e51d2682dd3857f7db66506c7f982c0b"
+      alt="voting image"
+      width="350px"
+      height="242px"
+      class="position"
+    />
+
+    <script>
+      function login() {
+        const name = document.getElementById("username").value;
+        if (!name) return alert("Enter a name!");
+        localStorage.setItem("username", name);
+        window.location.href = "vote.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #e9f2ff;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.clickme {
+  background-color: #6ba6ff;
+  border-radius: 5px;
+}
+
+#username {
+  background-color: #ffffff;
+}
+
+.position {
+  position: fixed;
+  top: 250px;
+  right: 590px;
+  border-radius: 5px;
+}
+
+.vote1 {
+  background-color: #fde2f5;
+  border: solid 2px #ff64d1;
+  border-radius: 4px;
+}
+
+.vote2 {
+  background-color: #e4f6fc;
+  border: solid 2px #2bb9e9;
+  border-radius: 4px;
+}
+
+.vote3 {
+  background-color: #dbf7c4;
+  border: solid 2px #64c118;
+  border-radius: 4px;
+}
+
+.link {
+  text-decoration: none;
+  color: #1775ff;
+}

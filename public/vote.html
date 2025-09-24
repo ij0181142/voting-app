@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Cast Your Vote</h2>
+    <button class="vote1" onclick="castVote('A')">Node.js</button>
+    <button class="vote2" onclick="castVote('B')">Express.js</button>
+    <button class="vote3" onclick="castVote('C')">Javascript</button>
+
+    <p id="msg">Leave all your work and vote first!</p>
+    <br />
+    <a class="link" href="results.html">See Results</a>
+
+    <script>
+      async function castVote(option) {
+        const username = localStorage.getItem("username");
+        if (!username) {
+          return alert("Login first!");
+        }
+
+        const res = await fetch("/vote", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, option }),
+        });
+
+        const data = await res.json();
+        document.getElementById("msg").innerText = data.message;
+      }
+    </script>
+  </body>
+</html>
