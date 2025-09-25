@@ -1,6 +1,6 @@
 # Real-Time Voting App
 
-A simple beginner-friendly voting app built with **Node.js, Express, and Socket.io**.  
+A simple voting app built with **Node.js, Express, and Socket.io**.  
 Users can log in with a name, cast one vote, and see live results.
 
 ## Features
